@@ -167,17 +167,17 @@ body:has(.card[data-color="green"]:hover) {
 
 /* Neo Brutalism */
 .neo-brutalism-blue {
-  background: #2b77e7;
+  background: #2b76e7a3;
   position: relative;
   border-radius: 10px;
-  border: #2b77e7;
-  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
-    0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
+  border: #2b77e7a3;
+  box-shadow: 0.6vmin 0.6vmin #336cc1a3, 1vmin 1vmin #0092dba3, 1vmin 1vmin #0092dba3,
+    0.65vmin 1vmin #0092dba3, 1vmin 0.65vmin #0092dba3;
 }
 
 .neo-brutalism-white {
-  background: #fff;
-  border: #fff;
-  box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
-    0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+  background: #ffffffa3;
+  border: #ffffffa3;
+  box-shadow: 0.6vmin 0.6vmin #ffffffa3, 1vmin 1vmin #d2e4ffa3, 1vmin 1vmin #d2e4ffa3,
+    0.65vmin 1vmin #d2e4ffa3, 1vmin 0.65vmin #d2e4ffa3;
 }

@@ -1,6 +1,7 @@
 import { useState, Suspense} from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
+import HomeInfo from '../components/HomeInfo';
 import Island from '../models/Island'
 import Sky from '../models/Sky'
 import Bird from '../models/Bird'
@@ -32,7 +33,7 @@ const [ currentStage, setCurrentStage ] = useState(1);
       screenPosition = [0, -1.5 ,0];
     } else{
       screenScale = [3, 3, 3];
-      screenPosition = [0, -4 ,-4];
+      screenPosition = [0, -4.5 ,-4];
     }
     return [screenScale, screenPosition]
   }
@@ -44,7 +45,7 @@ const [ currentStage, setCurrentStage ] = useState(1);
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex
       items-center justify-center">
-        POPUP
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas 
       className={`w-full h-screen bg-transparent ${
