@@ -1,6 +1,6 @@
 import bash from './bash.svg'
 import c from './c.svg'
-import csharp from './C#.svg'
+import csharp from './csharp.svg'
 import cplusplus from './C++.svg'
 import css from './css.svg'
 import emacs from './emacs.svg'

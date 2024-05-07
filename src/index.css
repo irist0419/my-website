@@ -155,6 +155,7 @@ body:has(.card[data-color="green"]:hover) {
   transform-style: preserve-3d;
   transform-origin: top left;
   overflow: hidden;
+  text-shadow: 0 0 3px #000000, 0 0 5px #ffffff;
 }
 
 .block-container:hover > .btn-back {

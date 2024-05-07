@@ -24,9 +24,34 @@ import {
 
 export const skills = [
     {
+        imageUrl: bash,
+        name: "Bash",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: c,
+        name: "C",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: csharp,
+        name: "C#",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: cplusplus,
+        name: "C++",
+        type: "Programming Language",
+    },
+    {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
+    },
+    {
+        imageUrl: emacs,
+        name: "GNU Emacs",
+        type: "IDE",
     },
     {
         imageUrl: git,
@@ -49,6 +74,11 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: lisp,
+        name: "Emacs Lisp",
+        type: "Programming Language",
+    },
+    {
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
@@ -57,6 +87,11 @@ export const skills = [
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
     },
     {
         imageUrl: react,
@@ -68,7 +103,16 @@ export const skills = [
         name: "Tailwind CSS",
         type: "Frontend",
     },
-    
+    {
+        imageUrl: unity,
+        name: "Unity",
+        type: "Game Engine",
+    },
+    {
+        imageUrl: webgl,
+        name: "WebGL",
+        type: "API",
+    },
 ];
 
 export const experiences = [
@@ -108,7 +152,6 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Amazon Price Tracker',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
