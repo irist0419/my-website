@@ -1,6 +1,7 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
+    cat,
     contact,
+    bird,
     bash,
     c,
     csharp,
@@ -9,6 +10,7 @@ import {
     emacs,
     git,
     github,
+    gun,
     html,
     javascript,
     lisp,
@@ -20,6 +22,7 @@ import {
     linkedin,
     unity,
     webgl,
+    website,
 } from "../assets/icons";
 
 export const skills = [
@@ -115,22 +118,22 @@ export const skills = [
     },
 ];
 
-export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+// export const experiences = [
+//     {
+//         title: "React.js Developer",
+//         company_name: "Starbucks",
+//         icon: ,
+//         iconBg: "#accbe1",
+//         date: "March 2020 - April 2021",
+//         points: [
+//             "Developing and maintaining web applications using React.js and other related technologies.",
+//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//             "Implementing responsive design and ensuring cross-browser compatibility.",
+//             "Participating in code reviews and providing constructive feedback to other developers.",
+//         ],
+//     },
 
-];
+// ];
 
 export const socialLinks = [
     {
@@ -152,10 +155,32 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: gun,
+        theme: 'btn-back-yellow',
+        name: 'Untitled-TBA',
+        description: "[WIP] Group project for Game Development class. A first person shooter game incorporating OpenAI API for NPC interaction. Expected: Summer 24'.",
+        link: 'WIP',
+    },
+    {
+        iconUrl: website,
+        theme: 'btn-back-blue',
+        name: 'Personal Website',
+        description: "This is the very website you are looking at! Built on my own based on @javascirptmastery's tutorial on YouTube. GitHub repo linked below.",
+        link: 'https://github.com/irist0419/my-website',
+    },
+    {
+        iconUrl: cat,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    }
+        name: 'NASCAT',
+        description: 'Group project for Computer Graphics class. An mini-game developed with given script tiny-graphics.js and WebGL knowledge. It is deployed with GitHub Pages and ready to play! ',
+        link: 'https://irist0419.github.io/UCLA-CS-174A/',
+    },
+    {
+        iconUrl: bird,
+        theme: 'btn-back-green',
+        name: 'LingGo',
+        description: 'Group project for Software Construction class. A website for Linguistics learners who are struggling with phonetics/IPA. The linked GitHub repo includes a ReadMe on how to launch LingGo on your local machine.',
+        link: 'https://github.com/irist0419/UCLA-CS-35L',
+    },
     
 ];

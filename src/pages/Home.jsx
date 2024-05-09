@@ -30,10 +30,10 @@ const [ currentStage, setCurrentStage ] = useState(1);
 
     if (window.innerWidth < 768){
       screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5 ,0];
+      screenPosition = [0.5, -2.65 ,0];
     } else{
       screenScale = [3, 3, 3];
-      screenPosition = [0, -4.5 ,-4];
+      screenPosition = [0.5, -2.65 ,0];
     }
     return [screenScale, screenPosition]
   }
@@ -67,10 +67,10 @@ const [ currentStage, setCurrentStage ] = useState(1);
               scale = {islandScale}
           />
           <Ship
-            shipScale = {shipScale}
-            shipPosition = {shipPosition}
+            scale = {shipScale}
+            position = {shipPosition}
             isRotating = {isRotating}
-            rotation={[0,20,0]}
+            rotation={[0,20.5,0]}
           />
         </Suspense>
       </Canvas>

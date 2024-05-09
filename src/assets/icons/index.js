@@ -1,4 +1,6 @@
 import bash from './bash.svg'
+import bird from './bird.svg'
+import cat from './cat.svg'
 import c from './c.svg'
 import csharp from './csharp.svg'
 import cplusplus from './C++.svg'
@@ -7,6 +9,7 @@ import emacs from './emacs.svg'
 import html from './html.svg'
 import git from './git.svg'
 import github from './github.svg'
+import gun from './gun.svg'
 import javascript from './javascript.svg'
 import linkedin from './linkedin.svg'
 import lisp from './lisp.svg'
@@ -19,11 +22,14 @@ import soundoff from './soundoff.png'
 import tailwindcss from './tailwindcss.svg'
 import unity from './unity.svg'
 import webgl from './webgl.svg'
+import website from './website.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 
 export {
+    bird,
     bash,
+    cat,
     c,
     csharp,
     cplusplus,
@@ -31,6 +37,7 @@ export {
     emacs,
     git,
     github,
+    gun,
     html,
     javascript,
     lisp,
@@ -42,6 +49,7 @@ export {
     linkedin,
     unity,
     webgl,
+    website,
     arrow,
     contact,
     soundon,
