@@ -1,4 +1,4 @@
-import { useState, Suspense} from 'react'
+import { useState, Suspense, useEffect, useRef} from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 import HomeInfo from '../components/HomeInfo';
@@ -6,11 +6,26 @@ import Island from '../models/Island'
 import Sky from '../models/Sky'
 import Bird from '../models/Bird'
 import Ship from '../models/Ship'
+import PirateTavern from '../assets/pirate-tavern.mp3'
+import { soundoff, soundon, scroll } from '../assets/icons';
 
 
 const Home = () => {
-const [isRotating, setIsRotating] = useState(false);
-const [ currentStage, setCurrentStage ] = useState(1);
+  const audioRef = useRef(new Audio(PirateTavern));
+  audioRef.current.volume =0.3;
+  audioRef.current.loop = true;
+  const [isRotating, setIsRotating] = useState(false);
+  const [ currentStage, setCurrentStage ] = useState(1);
+  const [ isPlayingMusic, setIsPlayingMusic ] = useState(false);
+
+  useEffect(() =>{
+    if(isPlayingMusic){
+      audioRef.current.play();
+    }
+    return () =>{
+      audioRef.current.pause();
+    }
+  },[isPlayingMusic])
 
   const adjustIslandForScreenSize =() => {
     let screenScale = null;
@@ -74,6 +89,21 @@ const [ currentStage, setCurrentStage ] = useState(1);
           />
         </Suspense>
       </Canvas>
+
+      <div className='absolute bottom-2 left-2' >
+        <img src = {!isPlayingMusic ? soundoff : soundon}
+          alt="sound"
+          className='w-10 h-10 cursor-pointer object-contain'
+          onClick = {() => setIsPlayingMusic(!isPlayingMusic) }
+        />
+      </div>
+      <div className='absolute bottom-2 right-2'>
+        <img src= {scroll}
+        alt="scroll"
+        className='w-10 h-10 object-contain'
+        />
+
+      </div>
     </section>
   )
 }
