@@ -158,7 +158,7 @@ export const projects = [
         iconUrl: gun,
         theme: 'btn-back-yellow',
         name: 'Untitled-TBA',
-        description: "[WIP] Group project for Game Development class. A first person shooter game incorporating OpenAI API for NPC interaction. Expected: Summer 24'.",
+        description: "[WIP] Group project for Game Development class. A Unity first person shooter game incorporating OpenAI API for NPC interaction. Expected: Summer 24'.",
         link: 'WIP',
     },
     {

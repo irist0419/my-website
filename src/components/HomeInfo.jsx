@@ -37,8 +37,8 @@ const renderContent ={
     ),
     3:(
         <InfoBox 
-        text = "Games I have played and Books I have read"
-        link = "/interest"
+        text = "Enjoy playing games and reading books"
+        link = "/interests"
         btnText= "Learn More"
         />
     ),
