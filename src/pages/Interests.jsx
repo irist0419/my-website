@@ -1,18 +1,44 @@
-import React from 'react';
+import {Suspense} from 'react';
 import { Link } from 'react-router-dom';
+import { Canvas } from '@react-three/fiber'
+import Loader from '../components/Loader'
+import Chest from '../models/Chest'
 
 const Interests = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text text-left">
-        My <span className="blue-gradient_text font-semibold drop-shadow">Interests</span>
-      </h1>
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          This is a library of games and books that I enjoy!
-        </p>
+      <div className="flex items-center justify-between h-12 mt-12">
+        <div className="w-8/10 mb-12">
+          <h1 className="head-text text-left">
+            My <span className="blue-gradient_text font-semibold drop-shadow">Interests</span>
+          </h1>
+          <div className="mt-5 flex flex-col gap-3 text-slate-500">
+            <p>
+              This is a library of games and books that I enjoy!
+            </p>
+          </div>
+        </div>
+        <div className="w-2/10 md:h-[450px] h-[250px]">
+          <Canvas camera={{
+            position: [12, 13, 5],
+            fov: 75,
+            near:0.1,
+            far:1000
+          }}>
+          <directionalLight intensity={2.5} position={[0, 8, 1]}/>
+          <ambientLight intensity={6} />
+            <Suspense fallback = {<Loader />}>
+              <Chest
+                position={[-5, -1, 0]}
+                rotation={[0, -0.45, 0]}
+                scale ={[0.01, 0.01, 0.01]}
+              />
+            </Suspense>
+          </Canvas>
+        </div>
+      
       </div>
-      <div className="mt-7 flex flex-col gap-3">
+      <div className="mt-12 flex flex-col gap-3">
         <h2 className="subhead-text text-center">
         Games
         </h2>
@@ -186,10 +212,6 @@ const Interests = () => {
          <p className='italic mt-5'>Before the Coffee Gets Cold</p>
          by Toshikazu Kawaguchi
          </p>
-
-            
-        
-
       </div>
     </section>
   )

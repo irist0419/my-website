@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        '2/10': '20%',
+        '8/10': '80%',
+      },
       colors: {
         gray: {
           200: "#D5DAE1"
