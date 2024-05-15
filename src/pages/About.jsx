@@ -1,6 +1,8 @@
 import React from 'react'
 import {skills} from "../constants"
 import CTA from "../components/CTA"
+import { Link } from 'react-router-dom'
+import { linkedin, github } from '../assets/icons'
 
 const About = () => {
   return (
@@ -35,7 +37,29 @@ const About = () => {
             </div>
           ))}
         </div>
+
+        <h3 className="subhead-text my-10">My Socials</h3>
+        <div className= "mt-15 flex flex-wrap gap-12 justify-center">
+          <Link to = "https://www.linkedin.com/in/iris-tsui-647383208">
+            <img
+              src = {linkedin}
+              alt = "LinkedIn"
+              className="w-16 h-16 hover:opacity-50 transition duration-300"
+            />
+          </Link>
+          <Link to = "https://github.com/irist0419">
+            <img
+              src = {github}
+              alt = "GitHub"
+              className="w-16 h-16 hover:opacity-50 transition duration-300"
+            />
+          </Link>
+
+        </div>
+
+
       </div>
+
 
       <hr className="border-slate-200" />
 
