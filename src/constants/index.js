@@ -157,9 +157,9 @@ export const projects = [
     {
         iconUrl: gun,
         theme: 'btn-back-yellow',
-        name: 'Untitled-TBA',
-        description: "[WIP] Group project for Game Development class. A Unity first person shooter game incorporating OpenAI API for NPC interaction. Expected: Summer 24'.",
-        link: 'WIP',
+        name: 'Last Stand',
+        description: "Group project for Game Development class. A Unity first person shooter game incorporating Llama model (active server required) for AI NPC interaction. It is deployed and featured in UCLA ACM Studios itch.io page.",
+        link: 'https://subramaniamsatyen.itch.io/last-stand',
     },
     {
         iconUrl: website,
