@@ -19,6 +19,7 @@ import python from './python.svg'
 import react from './react.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import space from './space.svg'
 import scroll from './scroll.png'
 import tailwindcss from './tailwindcss.svg'
 import unity from './unity.svg'
@@ -53,6 +54,7 @@ export {
     website,
     arrow,
     contact,
+    space,
     soundon,
     soundoff,
     scroll

@@ -18,6 +18,7 @@ import {
     nodejs,
     python,
     react,
+    space,
     tailwindcss,
     linkedin,
     unity,
@@ -155,10 +156,17 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: space,
+        theme: 'btn-back-pink',
+        name: 'Last Hope:Return',
+        description: "Group project for Game Design & Development class. A space-themed third person parkour game made in Unity. Built a custom character controller for movements, game physics and character animation. Deployed on itch.io",
+        link: 'https://irist0419.itch.io/last-hope-return',
+    },
+    {
         iconUrl: gun,
         theme: 'btn-back-yellow',
         name: 'Last Stand',
-        description: "Group project for Game Development class. A Unity first person shooter game incorporating Llama model (active server required) for AI NPC interaction. It is deployed and featured in UCLA ACM Studios itch.io page.",
+        description: "Group project for Game Development class. A Unity first person shooter game incorporating Llama model (active server required) for AI NPC interaction. It is deployed and featured on UCLA ACM Studios itch.io page.",
         link: 'https://subramaniamsatyen.itch.io/last-stand',
     },
     {

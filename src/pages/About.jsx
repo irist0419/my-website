@@ -13,7 +13,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p className="indent-6">
-        A third-year Linguistics & Computer Science student at UCLA, looking for opportunities related to Game Development and Artificial Intelligence, also interested in Design and Narrative aspects of Game.
+        A fourth-year Linguistics & Computer Science student at UCLA, looking for opportunities related to Game Development and Artificial Intelligence, also interested in Design and Narrative aspects of Game.
         </p>
       </div>
 

@@ -13,7 +13,7 @@ const Projects = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          These are some projects I have spent time building. Along with some school projects, there are also personal projects(including this website!). 
+          These are some projects I have spent time building. Along with some school projects, there are also personal projects (including this website!). 
           Feel free to explore the codebase and share your piece of mind.
         </p>
       </div>
