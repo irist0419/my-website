@@ -1,7 +1,5 @@
 import {
-    cat,
     contact,
-    bird,
     bash,
     c,
     csharp,
@@ -10,7 +8,6 @@ import {
     emacs,
     git,
     github,
-    gun,
     html,
     javascript,
     lisp,
@@ -18,14 +15,19 @@ import {
     nodejs,
     python,
     react,
-    space,
     tailwindcss,
     linkedin,
     unity,
     webgl,
-    website,
 } from "../assets/icons";
 
+import{
+    lastHope,
+    lastStand,
+    Nascat,
+    LingGo,
+    website
+} from "../assets/images"
 export const skills = [
     {
         imageUrl: bash,
@@ -154,41 +156,45 @@ export const socialLinks = [
     }
 ];
 
-export const projects = [
+export const gprojects = [
     {
-        iconUrl: space,
-        theme: 'btn-back-pink',
+        //iconUrl: space,
+        imageUrl: lastHope,
         name: 'Last Hope:Return',
-        description: "Group project for Game Design & Development class. A space-themed third person parkour game made in Unity. Built a custom character controller for movements, game physics and character animation. Deployed on itch.io",
+        description: "A space-themed third person parkour game made in Unity by a duo effort.  Built a custom character controller for movements, game physics and character animation. Deployed on my itch.io page.",
         link: 'https://irist0419.itch.io/last-hope-return',
     },
     {
-        iconUrl: gun,
-        theme: 'btn-back-yellow',
+        //iconUrl: gun,
+        imageUrl:lastStand,
         name: 'Last Stand',
-        description: "Group project for Game Development class. A Unity first person shooter game incorporating Llama model (active server required) for AI NPC interaction. It is deployed and featured on UCLA ACM Studios itch.io page.",
+        description: "A Unity first person shooter game incorporating Llama model (active server required) for AI NPC interaction by 3 students. It is deployed and featured on UCLA ACM Studios itch.io page.",
         link: 'https://subramaniamsatyen.itch.io/last-stand',
     },
     {
-        iconUrl: website,
-        theme: 'btn-back-blue',
+        //iconUrl: cat,
+        imageUrl: Nascat,
+        name: 'NASCAT',
+        description: 'As a duo, we developed a mini-game with given script tiny-graphics.js and WebGL knowledge. It is deployed with GitHub Pages and ready to play! ',
+        link: 'https://irist0419.github.io/UCLA-CS-174A/',
+    },
+    
+];
+
+export const wprojects = [
+    {
+        //iconUrl: website,
+        imageUrl: website,
         name: 'Personal Website',
-        description: "This is the very website you are looking at! Built on my own based on @javascirptmastery's tutorial on YouTube. GitHub repo linked below.",
+        description: "This is the very website you are looking at! Built based on @javascirptmastery's tutorial on YouTube, but with my own twist. GitHub repo linked below.",
         link: 'https://github.com/irist0419/my-website',
     },
     {
-        iconUrl: cat,
-        theme: 'btn-back-red',
-        name: 'NASCAT',
-        description: 'Group project for Computer Graphics class. An mini-game developed with given script tiny-graphics.js and WebGL knowledge. It is deployed with GitHub Pages and ready to play! ',
-        link: 'https://irist0419.github.io/UCLA-CS-174A/',
-    },
-    {
-        iconUrl: bird,
-        theme: 'btn-back-green',
+        //iconUrl: bird,
+        imageUrl: LingGo,
         name: 'LingGo',
-        description: 'Group project for Software Construction class. A website for Linguistics learners who are struggling with phonetics/IPA. The linked GitHub repo includes a ReadMe on how to launch LingGo on your local machine.',
+        description: 'A web application for Linguistics(Phonetics) learners made by a group of 5. The linked GitHub repo includes a ReadMe on how to launch LingGo on your local machine.',
         link: 'https://github.com/irist0419/UCLA-CS-35L',
     },
-    
+
 ];

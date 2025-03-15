@@ -205,7 +205,9 @@ const Interests = () => {
         Books
         </h2>
         <p className='text-right'>
-        <p className='italic '>Subliminal</p>
+          <p className='italic '>Red Bean Paste</p>
+          by Durian Sukegawa
+          <p className='italic mt-5'>Subliminal</p>
          by Leonard Mlodinow
          <p className='italic mt-5'>If Cats Disappeared from the World</p>
          by Genki Kawamura

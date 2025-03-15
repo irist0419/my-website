@@ -98,11 +98,13 @@ body:has(.card[data-color="green"]:hover) {
     0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
 
+
 .block-container {
   position: relative;
   transition: 250ms;
   perspective: 500px;
 }
+
 
 .block-container .btn-back {
   position: absolute;
@@ -113,10 +115,10 @@ body:has(.card[data-color="green"]:hover) {
   transition: 250ms;
   transform-style: preserve-3d;
   transform-origin: bottom right;
-  transform: rotateZ(15deg);
   will-change: transform;
   box-shadow: 16px 0 40px #e4e4e4;
 }
+
 
 .block-container .btn-back-red {
   background: linear-gradient(135deg, #ff2222 -20%, #ff805c 120%);
@@ -167,7 +169,24 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container:hover > .btn-front {
-  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+  transform: translateZ(20px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+}
+
+.card {
+  position: relative;
+  max-width: 24rem; /* max-w-sm equivalent */
+  background-color: lightyellow;
+  border: 1px solid #e5e7eb; /* gray-200 border */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* shadow-sm */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px; /* Enable 3D perspective */
+  transform-style: preserve-3d; /* Maintain 3D effect */
+}
+
+.card:hover {
+  transform: translateZ(20px) rotateZ(3deg) rotateX(-5deg) rotateY(-5deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Shadow for hover effect */
 }
 
 /* Neo Brutalism */

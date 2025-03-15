@@ -1,4 +1,4 @@
-import { projects } from '../constants';
+import {gprojects, wprojects} from '../constants';
 import { Link } from 'react-router-dom';
 import { arrow } from '../assets/icons'
 import CTA2 from "../components/CTA2"
@@ -6,63 +6,118 @@ import CTA2 from "../components/CTA2"
 
 const Projects = () => {
   return (
-    <section className="max-container">
-      <h1 className="head-text text-left">
-        My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
-      </h1>
+      <section className="max-container">
+          <h1 className="head-text text-left">
+              My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
+          </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          These are some projects I have spent time building. Along with some school projects, there are also personal projects (including this website!). 
-          Feel free to explore the codebase and share your piece of mind.
-        </p>
-      </div>
-
-      <div className="flex flex-wrap my-20 gap-16">
-        {projects.map((project) => (
-          <div className="lg:w-[400px] w-full" key={project.name}>
-            <div className="block-container w-12 h-12"> 
-              <div className={`btn-back rounded-xl ${project.theme}`}/>
-                <div className="btn-front rounded-xl flex justify-center items-center">
-                  <img 
-                    src = {project.iconUrl}
-                    alt = "Project Icon" 
-                    className="w-1/2 h-1/2 object-contain"
-                  />
-                </div>
-            </div>
-
-            <div className="mt-5 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">
-                {project.name}
-              </h4>
-              <p className="mt-2 text-slate-500">
-                {project.description}
+          <div className="mt-5 flex flex-col gap-3 text-slate-500">
+              <p>
+                  These are some projects I have spent time building. Along with some school projects, there are also
+                  personal projects (including this website!).
+                  Feel free to explore the codebase and share your piece of mind.
               </p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
-                <Link to = {project.link}
-                target="_blank"
-                rel = "noopener noreferrer"
-                className="font-semibold text-blue-600">
-                  Link
-                </Link>
-                <img
-                  src = {arrow}
-                  alt = "arrow"
-                  className="w-4 h-4 object-contain"
-                />
-              </div>
-            </div>
-
           </div>
-        ))}
-      </div>
 
-      <hr className="border-slate-200" />
+          <div className="subhead-text mt-5 flex flex-col text-gray-600 text-center">
+              <p>
+                  Game Development
+              </p>
+          </div>
 
-      <CTA2/>
+          <div className="snap-x mb-10 overflow-x-scroll">
+              <div className="flex flex-nowrap mt-5 mb-5 gap-5">
+                  {gprojects.map((project) => (
+                      <div className="snap-center card ">
+                          <div className="lg:w-[400px] w-full" key={project.name}>
+                              <Link to={project.link}>
+                                  <img
+                                      src={project.imageUrl}
+                                      alt="Project Image"
+                                      className="w-[383px] h-1/2 object-contain rounded-t-lg"
+                                  />
+                              </Link>
+                          </div>
 
-    </section>
+                          <div className="p-5 flex flex-col">
+                              <h4 className="text-2xl font-poppins font-semibold">
+                                  {project.name}
+                              </h4>
+                              <p className="mt-2 text-slate-500">
+                                  {project.description}
+                              </p>
+                              <div className="mt-5 flex items-center gap-2 font-poppins">
+                                  <Link to={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-semibold text-blue-600">
+                                      See More
+                                  </Link>
+                                  <img
+                                      src={arrow}
+                                      alt="arrow"
+                                      className="w-4 h-4 object-contain"
+                                  />
+                              </div>
+                          </div>
+                      </div>
+
+                  ))}
+              </div>
+          </div>
+
+          <div className="subhead-text mt-5 flex flex-col text-gray-600 text-center">
+              <p>
+                  Web Development
+              </p>
+          </div>
+
+          <div className="snap-x my-1 overflow-x-scroll">
+              <div className="flex flex-nowrap mt-5 mb-5 gap-5">
+                  {wprojects.map((project) => (
+                      <div className="snap-center card ">
+                          <div className="lg:w-[400px] w-full" key={project.name}>
+                              <Link to={project.link}>
+                                  <img
+                                      src={project.imageUrl}
+                                      alt="Project Image"
+                                      className="w-[383px] h-1/2 object-contain rounded-t-lg"
+                                  />
+                              </Link>
+                          </div>
+
+                          <div className="p-5 flex flex-col">
+                              <h4 className="text-2xl font-poppins font-semibold">
+                                  {project.name}
+                              </h4>
+                              <p className="mt-2 text-slate-500">
+                                  {project.description}
+                              </p>
+                              <div className="mt-5 flex items-center gap-2 font-poppins">
+                                  <Link to={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="font-semibold text-blue-600">
+                                      See More
+                                  </Link>
+                                  <img
+                                      src={arrow}
+                                      alt="arrow"
+                                      className="w-4 h-4 object-contain"
+                                  />
+                              </div>
+                          </div>
+                      </div>
+
+                  ))}
+              </div>
+          </div>
+
+          <hr className="border-slate-200"/>
+
+          <CTA2/>
+
+      </section>
   )
 }
 
