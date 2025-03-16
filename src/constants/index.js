@@ -21,10 +21,12 @@ import {
     webgl,
 } from "../assets/icons";
 
-import{
+import {
+    dreamScape,
     lastHope,
     lastStand,
     Nascat,
+    Itch,
     LingGo,
     website
 } from "../assets/images"
@@ -158,6 +160,14 @@ export const socialLinks = [
 
 export const gprojects = [
     {
+        imageUrl: dreamScape,
+        name: 'Project : DreamScape',
+        description: "An AAA-like project by Aspen Game Studio.  Worked on player input systems and quest implementation towards Steam launch as programmer. Add our game to your wishlist on Steam!",
+        link: 'https://store.steampowered.com/app/3569570/Project__DreamScape/',
+
+    },
+    {
+
         //iconUrl: space,
         imageUrl: lastHope,
         name: 'Last Hope:Return',
@@ -178,7 +188,12 @@ export const gprojects = [
         description: 'As a duo, we developed a mini-game with given script tiny-graphics.js and WebGL knowledge. It is deployed with GitHub Pages and ready to play! ',
         link: 'https://irist0419.github.io/UCLA-CS-174A/',
     },
-    
+    {
+        imageUrl: Itch,
+        name: 'Game Jam works',
+        description: 'You can find my game jam works on my itch.io profile:)',
+        link: 'https://irist0419.itch.io/'
+    },
 ];
 
 export const wprojects = [
