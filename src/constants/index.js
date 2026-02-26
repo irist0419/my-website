@@ -22,6 +22,8 @@ import {
 } from "../assets/icons";
 
 import {
+    maskOn,
+    octDemo,
     dreamScape,
     lastHope,
     lastStand,
@@ -160,10 +162,27 @@ export const socialLinks = [
 
 export const gprojects = [
     {
+
+        imageUrl: maskOn,
+        name: 'Mask On',
+        description: "Best Game award winner for Global Game Jame '26 at MAX's Education. A puzzle game where you need to find the right mask to go home during quarantine. ",
+        link: 'https://thisyc.itch.io/mask-on',
+
+    },
+    {
+
         imageUrl: dreamScape,
-        name: 'Project : DreamScape',
-        description: "An AAA-like project by Aspen Game Studio.  Worked on player input systems and quest implementation towards Steam launch as programmer. Add our game to your wishlist on Steam!",
+        name: 'Project DreamScape',
+        description: "An AAA-like project by Aspen Game Studio.  Worked on player input systems and quest implementation towards Steam launch as programmer. Available on Steam NOW!",
         link: 'https://store.steampowered.com/app/3569570/Project__DreamScape/',
+
+    },
+    {
+
+        imageUrl: octDemo,
+        name: '2.5D Technical Demo',
+        description: " My first solo Unreal Engine 5 work. Inspired by the art style of Octopath Traveler, this is my attempt at recreating 2.5D style in UE5.  ",
+        link: 'https://github.com/irist0419/OTDemo/blob/main/README.md',
 
     },
     {
@@ -188,10 +207,11 @@ export const gprojects = [
         description: 'As a duo, we developed a mini-game with given script tiny-graphics.js and WebGL knowledge. It is deployed with GitHub Pages and ready to play! ',
         link: 'https://irist0419.github.io/UCLA-CS-174A/',
     },
+
     {
         imageUrl: Itch,
         name: 'Game Jam works',
-        description: 'You can find my game jam works on my itch.io profile:)',
+        description: 'You can find my other game jam works on my itch.io profile:)',
         link: 'https://irist0419.itch.io/'
     },
 ];
